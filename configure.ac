@@ -716,12 +716,15 @@ MBEDTLS_LIBS='$(top_srcdir)/external/mbedtls/library/libmbedtls.a \
 	$(top_srcdir)/external/mbedtls/library/libmbedcrypto.a'
 MBEDTLS_CFLAGS='-I$(top_srcdir)/external/mbedtls/include'
 LIBIL2CPP_CFLAGS='-I$(top_srcdir)/../../il2cpp/build/libil2cpp'
+LIBIL2CPP_CXXFLAGS='-I$(top_srcdir)/../../il2cpp/build/libil2cpp'
+
 
 AC_SUBST(GLIB_CFLAGS)
 AC_SUBST(GLIB_LIBS)
 AC_SUBST(MBEDTLS_LIBS)
 AC_SUBST(MBEDTLS_CFLAGS)
 AC_SUBST(LIBIL2CPP_CFLAGS)
+AC_SUBST(LIBIL2CPP_CXXFLAGS)
 
 # Enable support for fast thread-local storage
 # Some systems have broken support, so we allow to disable it.

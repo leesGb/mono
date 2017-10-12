@@ -54,6 +54,7 @@ libeglib_la_SOURCES = \
 libeglib_la_CFLAGS = -g -Wall -D_FORTIFY_SOURCE=2
 
 AM_CPPFLAGS = -I$(srcdir) $(LIBIL2CPP_CFLAGS)
+AM_CXXFLAGS = -I$(srcdir) $(LIBIL2CPP_CXXFLAGS)
 
 if HOST_WIN32
 libeglib_la_LIBADD = -lm $(LIBICONV) -lpsapi

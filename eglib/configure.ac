@@ -16,6 +16,7 @@ AM_MAINTAINER_MODE
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 AC_PROG_CC
+AC_PROG_CXX
 AM_PROG_LIBTOOL
 # Use dolt (http://dolt.freedesktop.org/) instead of libtool for building.
 DOLT
@@ -33,6 +34,12 @@ AC_SUBST(GNUC_PRETTY)
 AC_SUBST(GNUC_UNUSED)
 AC_SUBST(GNUC_NORETURN)
 AC_SUBST(BREAKPOINT)
+
+
+LIBIL2CPP_CFLAGS='-I$(top_srcdir)/../../../il2cpp/build/libil2cpp'
+LIBIL2CPP_CXXFLAGS='-I$(top_srcdir)/../../../il2cpp/build/libil2cpp'
+AC_SUBST(LIBIL2CPP_CFLAGS)
+AC_SUBST(LIBIL2CPP_CXXFLAGS)
 
 # We use a separate variable to pass down CPPFLAGS and CFLAGS from the main mono 
 # configure, because of autoconf brokeness
