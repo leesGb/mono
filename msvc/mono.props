@@ -21,6 +21,7 @@
     <top_srcdir>$(MSBuildProjectDirectory)/$(MonoSourceLocation)</top_srcdir>
     <MONO_DIR>$(top_srcdir)</MONO_DIR>
     <MONO_INCLUDE_DIR>$(MONO_DIR)/mono</MONO_INCLUDE_DIR>
+    <LIBIL2CPP_INCLUDE_DIR>$(MONO_DIR)/../../il2cpp/build/libil2cpp</LIBIL2CPP_INCLUDE_DIR>
     <MONO_EGLIB_INCLUDE_DIR>$(MONO_DIR)/eglib;$(MONO_DIR)/eglib/include;$(MONO_DIR)/eglib/test</MONO_EGLIB_INCLUDE_DIR>
     <MONO_EGLIB_SOURCE_DIR>$(MONO_DIR)/eglib/src</MONO_EGLIB_SOURCE_DIR>
     <MONO_MBEDTLS_INCLUDE_DIR>$(MONO_DIR)/external/mbedtls/include</MONO_MBEDTLS_INCLUDE_DIR>

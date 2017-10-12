@@ -100,6 +100,7 @@
 #include <mono/utils/w32api.h>
 #include <mono/utils/mono-systemcerts.h>
 #include <metadata/mono-mbedtls.h>
+#include <os/c-api/SystemCertificates-c-api.h>
 
 #include "decimal-ms.h"
 #include "number-ms.h"

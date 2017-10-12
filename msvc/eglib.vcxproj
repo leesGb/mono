@@ -120,7 +120,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(MONO_EGLIB_SOURCE_DIR);$(MONO_EGLIB_INCLUDE_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(LIBIL2CPP_INCLUDE_DIR);$(MONO_EGLIB_SOURCE_DIR);$(MONO_EGLIB_INCLUDE_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <PrecompiledHeader>
@@ -160,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\eglib\src\Makefile.am" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\eglib\src\glib-libil2cpp.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
