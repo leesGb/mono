@@ -115,6 +115,9 @@ libMonoPosixHelper_la_LIBADD =			\
 # libMonoPosixHelper_la_LDFLAGS = -no-undefined -version-info 1:0:1
 libMonoPosixHelper_la_LDFLAGS = -no-undefined -avoid-version
 libMonoSupportW_la_LDFLAGS = -no-undefined -avoid-version
+if PLATFORM_DARWIN
+libMonoSupportW_la_LDFLAGS+=-framework CoreFoundation -framework Foundation -framework Security
+endif
 
 libMonoSupportW_la_SOURCES =			\
 		supportw.c			\
