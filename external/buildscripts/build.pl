@@ -1171,10 +1171,12 @@ if ($build)
 		if ($debug)
 		{
 			$ENV{CFLAGS} = "$archflags -g -O0";
+			$ENV{CXXFLAGS} = "$archflags -g -O0";
 		}
 		else
 		{
 			$ENV{CFLAGS} = "$archflags -Os";  #optimize for size
+			$ENV{CXXFLAGS} = "$archflags -Os";  #optimize for size
 		}
 	}
 	elsif($^O eq 'darwin')
