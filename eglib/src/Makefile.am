@@ -38,7 +38,6 @@ common_files = \
 	gmarkup.c	\
 	gutf8.c		\
 	gunicode.c	\
-	glib-libil2cpp.cpp	\
 	unicode-data.h
 
 if HOST_WIN32
