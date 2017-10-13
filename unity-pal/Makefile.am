@@ -7,6 +7,6 @@ libunity_pal_la_SOURCES = \
 
 libunity_pal_la_CFLAGS = -g -Wall -D_FORTIFY_SOURCE=2
 
-AM_CPPFLAGS = -I$(srcdir) $(LIBIL2CPP_CFLAGS)
-AM_CXXFLAGS = -I$(srcdir) $(LIBIL2CPP_CXXFLAGS)
+AM_CPPFLAGS = -I$(srcdir) $(UNITY_PAL_CFLAGS)
+AM_CXXFLAGS = -I$(srcdir) $(UNITY_PAL_CFLAGS)
 

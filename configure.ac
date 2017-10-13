@@ -715,8 +715,7 @@ MBEDTLS_LIBS='$(top_srcdir)/external/mbedtls/library/libmbedtls.a \
 	$(top_srcdir)/external/mbedtls/library/libmbedx509.a \
 	$(top_srcdir)/external/mbedtls/library/libmbedcrypto.a'
 MBEDTLS_CFLAGS='-I$(top_srcdir)/external/mbedtls/include'
-LIBIL2CPP_CFLAGS='-I$(top_srcdir)/../../il2cpp/build/libil2cpp'
-LIBIL2CPP_CXXFLAGS='-I$(top_srcdir)/../../il2cpp/build/libil2cpp'
+UNITY_PAL_CFLAGS='-I$(top_srcdir)/../../il2cpp/build/libil2cpp'
 UNITY_PAL_LIBS='$(top_srcdir)/unity-pal/libunity-pal.la'
 
 
@@ -724,8 +723,7 @@ AC_SUBST(GLIB_CFLAGS)
 AC_SUBST(GLIB_LIBS)
 AC_SUBST(MBEDTLS_LIBS)
 AC_SUBST(MBEDTLS_CFLAGS)
-AC_SUBST(LIBIL2CPP_CFLAGS)
-AC_SUBST(LIBIL2CPP_CXXFLAGS)
+AC_SUBST(UNITY_PAL_CFLAGS)
 AC_SUBST(UNITY_PAL_LIBS)
 
 # Enable support for fast thread-local storage
