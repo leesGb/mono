@@ -6,7 +6,7 @@
 
 #if IL2CPP_TARGET_WINDOWS_DESKTOP
 #include <os/Win32/SystemCertificates.cpp>
-#elif IL2CPP_TARGET_DARWIN
+#elif IL2CPP_TARGET_OSX
 #include <os/OSX/SystemCertificates.cpp>
 #elif IL2CPP_TARGET_LINUX
 #include <os/Posix/SystemCertificates.cpp>
